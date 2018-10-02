@@ -1,0 +1,38 @@
+
+.grid{
+    display: grid;
+    grid-template-columns:300px 1fr;
+    grid-template-rows: 1fr 70px 500px 35px;
+    grid-template-areas: 
+    "title title"
+    "header header"
+    "sidebar content"
+    "footer footer";
+}
+
+.title{
+    grid-area: title;
+}
+
+.header{
+    grid-area: header;
+}
+
+.sidebar{
+    grid-area: sidebar;
+}
+
+.content{
+    grid-area: content;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: black;
+    text-align : center;
+    
+}
+.footer p {
+
+    color: white;
+}
